@@ -1,0 +1,14 @@
+/*
+Variables
+
+Variables are placeholder for storing info that you want to reuse throughout your styles. You can store things like colours, font-families, or any css calue you can think you might want to reuse.
+SCSS uses the '$' symbol to declare variables. 
+*/
+
+//Colours
+$primary: #3498db;
+$secondary: #aaaaaa; 
+$white: white;
+
+// Font families
+$helvetica: Helvetica, Arial, sans-serif;

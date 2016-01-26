@@ -1,0 +1,66 @@
+/* this file importas all your partials to be compiled into one stylesheet, shich you can attach to your html. 
+
+All the files that are prefixed with an underscore 
+
+"_name-of-file.scss" are called partials - meaning that their css isn't compile unless it's imported into an unprefixed .scss file
+*/
+/*
+Variables
+
+Variables are placeholder for storing info that you want to reuse throughout your styles. You can store things like colours, font-families, or any css calue you can think you might want to reuse.
+SCSS uses the '$' symbol to declare variables. 
+*/
+/*base scss contains all our variables */
+/*
+	A mixin is a similar to a funstion 
+it has a multiple declarations, as well as can take arguments.
+
+	To declare a mixin
+	@include mixin-name
+
+	To use a mixin
+	@include mixin-name
+
+	To use a mixin with arguments
+	@include(argument1, $argument2)
+
+*/
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #3498db;
+}
+
+.primary-btn {
+  background: #3498db;
+  padding: .5em 1em;
+  color: white;
+  border-radius: 3px;
+  margin: 1em;
+  display: inline-block;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+
+.primary-btn:hover {
+  background-color: darkblue;
+}
+
+.border {
+  border: 1px solid #ccc;
+}
+
+.border p {
+  color: red;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  @extended .border;
+}
